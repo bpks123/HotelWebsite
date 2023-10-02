@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels in Ranchi</title>
+    <link rel="stylesheet" href="cssmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-first-list">
+            <a href="index.html"><li><span style="color: green; font-size: 25px; font-weight: 600;">Hotel</span><span style="color: red; font-size: 35px; font-weight: 800;">IN</span><span style="color: blue; font-size: 25px; font-weight: 900;">Ranchi</span></li></a>
+            <li><i class="fa-solid fa-hotel"></i></li>
+            <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i><input class="input-search" type="text" placeholder="Search"></li>
+        </ul>
+        <ul class="nav-second-list">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><div class="label-text"></div>Home</a></div></li>
+            <li><a href="location.html"><i class="fa-solid fa-location-dot"></i><div class="label-text"></div>Location</a></div></li>
+            <li id="nav-notification"><a href="#"><i class="fa-solid fa-bell"></i><div class="label-text"></div>Notification</a></div></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Login</a></div></li>
+            <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i><div class="label-text"></div>Sign Up</a></div></li>
+        </ul>
+    </nav>
+    <section id="main-section">
+        <div id="notification">
+            <ul>
+                <li>No new notification</li>
+            </ul>
+        </div>
+        <div id="section1">
+            <div id="heading1"><h1>We compare hotel prices from multiple sites</h1></div>
+            <div id="heading2">
+                <div>All stays</div>
+                <div>Hotel</div>
+                <div>House/Apartment</div>
+            </div>
+            <div id="heading3">
+                <div class="sub-heading" id="search1">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    <div><input class="input-search" id="search" type="text" placeholder="Where to?"></div>
+                </div>
+                <div class="sub-heading check-In">
+                    <i class="fa-regular fa-calendar" style="color: blue;"></i>
+                    <div class="check-Date">
+                        <div style="font-size: 15px; color: darkgrey; text-align: center;">Check In</div>
+                        <div><input type="date" name="date1" class="date1"></div>
+                    </div>
+                    
+                </div>
+                <div class="sub-heading check-In" class="check-In">
+                    <i class="fa-regular fa-calendar" style="color: blue;"></i>
+                    <div class="check-Date">
+                        <div style="font-size: 15px; color: darkgray; text-align: center;">Check Out</div>
+                        <div><input type="date" name="date2" class="date1"></div>
+                    </div>
+                </div>
+                <div class="sub-heading" id="guest-Number">
+                    <i class="fa-solid fa-bed"></i>
+                    <div id="rooms">
+                        <div style="text-align: center; color: darkgray;">Guests and Rooms</div>
+                        <div id="room-Input"><input type="number" name="number1" id="number1" placeholder="2 Guests">
+                            <input type="number" name="number2" id="number2" placeholder="1 Rooms">
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-heading">
+                    <input type="button" id="search2" name="search" value="Search">
+                </div>
+            </div>
+            <div id="heading4">
+                <ul id="list">
+                    <li><i class="fa-solid fa-a">goda</i></li>
+                    <li><i class="fa-solid fa-square-h">Hotels</i></li>
+                    <li><i class="fa-solid fa-b">ooking.com</i></li>
+                    <li><i class="fa-solid fa-plane-departure">MakeMyTrip</i></li>
+                    <li><i class="fa-solid fa-t">rip.com</i></li>
+                    <li><i class="fa-solid fa-o">yo</i></li>
+                    <li><i class="fa-solid fa-g">oibibo</i></li>
+                    <li><i class="fa-solid fa-plus"></i>100mores</li>
+                </ul>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="heading1"><h1>Popular searches</h1></div>
+            <div id="heading2">
+                <div id="city-border">Cities</div>
+                <div id="dest-border">Destination</div>
+            </div>
+            <div id="hotels">
+                <div class="photo" id="cities-img1">
+                    <div class="location">Ratu Road</div>
+                    <div class="num">1,129 Hotels</div>
+                    <div class="price">Avg. &#8377 1500</div>
+                </div>
+                <div class="photo" id="cities-img2">
+                    <div  class="location">Harmu Road</div>
+                    <div class="num">533 Hotels</div>
+                    <div class="price">Avg. &#8377 1900</div>
+                </div>
+                <div class="photo" id="cities-img3">
+                    <div  class="location">Main Road</div>
+                    <div class="num">1533 Hotels</div>
+                    <div class="price">Avg. &#8377 900</div>
+                </div>
+                <div class="photo" id="cities-img4">
+                    <div  class="location">Kanke Road</div>
+                    <div class="num">900 Hotels</div>
+                    <div class="price">Avg. &#8377 2100</div>
+                </div>
+            </div>
+
+        </div>
+        <div id="section3">
+            <div><h2>About HotelInRanchi</h2></div>
+            <div id="about">
+                <div class="box">
+                    <div class="content">
+                        <h1>HotelInRanchi hotel search</h1>
+                        <p>HotelInRanchi hotel search allows users to compare hotel prices in just a few clicks from hundreds of booking sites for more than 5.0 million hotels and other types of accommodation in over 190 countries. We help millions of travelers each year compare deals for hotels and accommodations. Get information for weekend trips to cities like Mumbai or Bengaluru and you can find the right hotel on trivago quickly and easily. Delhi and its surrounding area are great for trips that are a week or longer with the numerous hotels available.</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h1>Find cheap hotels on HotelInRanchi</h1>
+                        <p>With HotelInRanchi you can easily find your ideal hotel and compare prices from different websites. Simply enter where you want to go and your desired travel dates, and let our hotel search engine compare accommodation prices for you. To refine your search results, simply filter by price, distance (e.g. from the beach), star category, facilities and more. From budget hostels to luxury suites, trivago makes it easy to book online. You can search from a large variety of rooms and locations across India, like Shimla and Jaipur to popular cities and holiday destinations abroad!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h1>Hotel reviews help you find your ideal hotel</h1>
+                        <p>Over 175 million aggregated hotel ratings and more than 19 million images allow you to find out more about where you're travelling. To get an extended overview of a hotel property, HotelInRanchi shows the average rating and extensive reviews from other booking sites, e.g. Hotels.com, Expedia, Agoda, leading hotels, etc. HotelInRanchi makes it easy for you to find information about your trip to Dubai, including the ideal hotel for you.</p>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h1>How to book</h1>
+                        <p>HotelInRanchi is a hotel search with an extensive price comparison. The prices shown come from numerous hotels and booking websites. This means that while users decide on HotelInRanchi which hotel best suits their needs, the booking process itself is completed through the booking sites (which are linked to our website). By clicking on the “view deal” button, you will be forwarded onto a booking site where you can complete the reservation for the hotel deal found on HotelInRanchi.                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <div class="main-box left">
+                <div><h2>More popular searches</h2></div>
+                <div class="left-box">
+                    <div class="box1">
+                        <ul>
+                            <li><a href="#">Hotels in Hydrabad</a></li>
+                            <li><a href="#">Hotels in Bangalore</a></li>
+                            <li><a href="#">Hotels in Chennai</a></li>
+                            <li><a href="#">Hotels in Mysore</a></li>
+                            <li><a href="#">Hotels in Ranchi</a></li>
+                            <li><a href="#">Hotels in Kerela</a></li>
+                            <li><a href="#">Hotels in Delhi</a></li>
+                            <li><a href="#">Hotels in Pune</a></li>
+                            <li><a href="#">Hotels in Patna</a></li>
+                            <li><a href="#">Hotels in Uttar Pradesh</a></li>
+                            <li><a href="#">Hotels in Haridwar</a></li>
+                            <li><a href="#">Hotels in Madhay Pardesh</a></li>
+                            <li><a href="#">Hotels in Goa</a></li>
+                            <li><a href="#">Hotels in Puri</a></li>
+                            <li><a href="#">Hotels in Bhubaneswar</a></li>
+                            <li><a href="#">Hotels in Gaya</a></li>
+                            <li><a href="#">Hotels in Shimla</a></li>
+                            <li><a href="#">Hotels in Haryana</a></li>
+                            <li><a href="#">Hotels in Hubli</a></li>
+                            <li><a href="#">Hotels in Tirupati</a></li>
+                            <li><a href="#">Hotels in Jamsedpur</a></li>
+                            <li><a href="#">Hotels in Mumbai</a></li>
+                            <li><a href="#">Hotels in Rajasthan</a></li>
+                            <li><a href="#">Hotels in Housur</a></li>
+                            <li><a href="#">Hotels in Kota</a></li>
+                            <li><a href="#">Hotels in Samastipur</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hotels in Gaya</a></li>
+                            <li><a href="#">Hotels in Shimla</a></li>
+                            <li><a href="#">Hotels in Haryana</a></li>
+                            <li><a href="#">Hotels in Hubli</a></li>
+                            <li><a href="#">Hotels in Tirupati</a></li>
+                            <li><a href="#">Hotels in Jamsedpur</a></li>
+                            <li><a href="#">Hotels in Mumbai</a></li>
+                            <li><a href="#">Hotels in Rajasthan</a></li>
+                            <li><a href="#">Hotels in Housur</a></li>
+                            <li><a href="#">Hotels in Kota</a></li>
+                            <li><a href="#">Hotels in Secundrabad</a></li>
+                            <li><a href="#">Hotels in Bhadrak</a></li>
+                            <li><a href="#">Hotels in Tata</a></li>
+                            <li><a href="#">Hotels in Bokaro</a></li>
+                            <li><a href="#">Hotels in A & N</a></li>
+                            <li><a href="#">Hotels in Pondi</a></li>
+                            <li><a href="#">Hotels in Vishakha</a></li>
+                            <li><a href="#">Hotels in Banaras</a></li>
+                            <li><a href="#">Hotels in Housur</a></li>
+                            <li><a href="#">Hotels in Kota</a></li>
+                            <li><a href="#">Hotels in Secundrabad</a></li>
+                            <li><a href="#">Hotels in Bhadrak</a></li>
+                            <li><a href="#">Hotels in Tata</a></li>
+                            <li><a href="#">Hotels in Bokaro</a></li>
+                            <li><a href="#">Hotels in A & N</a></li>
+                            <li><a href="#">Hotels in Jamsedpur</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="main-box right">
+                <div><h2>HotelInRanchi Internation sites</h2></div>
+                <div class="left-box">
+                    <div class="box1">
+                        <ul>
+                            <li><a href="#">Hotels in Dubai</a></li>
+                            <li><a href="#">Hotels in Thailand</a></li>
+                            <li><a href="#">Hotels in America</a></li>
+                            <li><a href="#">Hotels in Nepal</a></li>
+                            <li><a href="#">Hotels in Malesiya</a></li>
+                            <li><a href="#">Hotels in Quibet</a></li>
+                            <li><a href="#">Hotels in Russia</a></li>
+                            <li><a href="#">Hotels in Hongkong</a></li>
+                            <li><a href="#">Hotels in China</a></li>
+                            <li><a href="#">Hotels in Sri Lanka</a></li>
+                            <li><a href="#">Hotels in Pakistan</a></li>
+                            <li><a href="#">Hotels in Bangladesh</a></li>
+                            <li><a href="#">Hotels in Urab</a></li>
+                            <li><a href="#">Hotels in Howard</a></li>
+                            <li><a href="#">Hotels in Nijeriya</a></li>
+                            <li><a href="#">Hotels in Canada</a></li>
+                            <li><a href="#">Hotels in Chile</a></li>
+                            <li><a href="#">Hotels in Brazil</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hotels in Argentina</a></li>
+                            <li><a href="#">Hotels in Australia</a></li>
+                            <li><a href="#">Hotels in Cesko</a></li>
+                            <li><a href="#">Hotels in Danmark</a></li>
+                            <li><a href="#">Hotels in Espana</a></li>
+                            <li><a href="#">Hotels in Belgie</a></li>
+                            <li><a href="#">Hotels in Brazil</a></li>
+                            <li><a href="#">Hotels in Bangladesh</a></li>
+                            <li><a href="#">Hotels in Urab</a></li>
+                            <li><a href="#">Hotels in Howard</a></li>
+                            <li><a href="#">Hotels in Nijeriya</a></li>
+                            <li><a href="#">Hotels in Canada</a></li>
+                            <li><a href="#">Hotels in Chile</a></li>
+                            <li><a href="#">Hotels in Brazil</a></li>
+                            <li><a href="#">Hotels in Argentina</a></li>
+                            <li><a href="#">Hotels in Australia</a></li>
+                            <li><a href="#">Hotels in Cesko</a></li>
+                            <li><a href="#">Hotels in Danmark</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="heading1">
+            <div><h2 style="color: white; margin-top: 40px;" >HotelInRanchi</h2></div>
+            <div>
+                <ul id="list">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="heading2">
+            <img src="https://static.vecteezy.com/system/resources/previews/015/272/207/original/india-3d-rounded-flag-with-transparent-background-free-png.png" alt="img">
+            <select name="country" id="country">
+                <option value="India">Places in India</option>
+                <option value="ranchi">Ranchi</option>
+                <option value="tata">Tata</option>
+                <option value="pune">Pune</option>
+                <option value="patna">Patna</option>
+                <option value="gaya">Gaya</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="puri">puri</option>
+                <option value="kerela">Kerela</option>
+                <option value="bhubaneswar">Bhubaneswar</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="delhi">Delhi</option>
+                <option value="shimla">Shimla</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="mysore">Mysore</option>
+                <option value="hubli">Hubli</option>
+            </select>
+        </div>
+        <div id="heading3">
+            <div class="box">
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Invester</a></li>
+                    <li><a href="#">Mobile apps</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Learn how HotelInRanchi works</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Legal Information</a></li>
+                    <li><a href="#">Don not sell my personal Information</a></li>
+                    <li><a href="#">Privacy notice</a></li>
+                    <li><a href="#">Cyber Information</a></li>
+                </ul>
+            </div>
+            <div class="box1">
+                <div><h4>Get exclusive inspiration for your next stay subscribe to our newsletter.</h4></div>
+                <div>
+                    <input type="email" placeholder="Email address">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div>
+                    <address id="address">Near Patel nagar new Website company HotelInRanchi Road no. 6 opposite to shastri Bazar</address>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="mainJs.js"></script>
+</body>
+</html>

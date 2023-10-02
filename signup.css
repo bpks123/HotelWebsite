@@ -1,0 +1,106 @@
+img{
+    margin-top: -50px;
+    position: absolute;
+    height: 108%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#main #notification{
+    position: absolute;
+    width: 240px;
+    min-height: 150px;
+    border: 1px solid black;
+    right: 120px;
+    margin-top: -40px;
+    background-color: #7da09a;
+    border-radius: 20px;
+    z-index: 1;
+    display: none;
+}
+#main #notification li{
+    list-style-type: none;
+    font-size: 20px;
+    word-wrap: break-word;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+#heading{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px 10px 40px 40px;
+    background-color: beige;
+}
+#heading1{
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightcyan;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+#sub-heading{
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#form-border{
+    border: 1px solid black;
+    height: 480px;
+    width: 550px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: rgba(20, 35, 32, 0.1);
+}
+#form{
+    padding: 10px;
+}
+#form input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+  width: 60%;
+  padding: 12px;
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+#gender,#number,#textarea,#email,#password{
+    margin-top: 20px;
+}
+#name{
+    margin-left: 36px;
+}
+#textarea{
+    margin-left: 20px;
+}
+#email{
+    margin-left: 38px;
+}
+#password{
+    margin-left: 8px;
+}
+label{
+    font-size: 20px;
+}
+.submitButton{
+    margin-top: 20px;
+    background-color: rgb(137,211,166);
+    padding: 10px;margin-left: 30%;
+    border: 0px;
+    border-radius: 4px;
+    width: 40%;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.submitButton:hover{
+    scale: 1.1;
+}

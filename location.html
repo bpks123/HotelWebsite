@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location in ranchi</title>
+    <link rel="stylesheet" href="location.css">
+    <link rel="stylesheet" href="cssmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-first-list">
+            <a href="index.html"><li><span style="color: green; font-size: 25px; font-weight: 600;">Hotel</span><span style="color: red; font-size: 35px; font-weight: 800;">IN</span><span style="color: blue; font-size: 25px; font-weight: 900;">Ranchi</span></li></a>
+            <li><i class="fa-solid fa-hotel"></i></li>
+            <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i><input class="input-search" type="text" placeholder="Search"></li>
+        </ul>
+        <ul class="nav-second-list">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><div class="label-text"></div>Home</a></div></li>
+            <li><a href="location.html"><i class="fa-solid fa-location-dot"></i><div class="label-text"></div>Location</a></div></li>
+            <li id="nav-notification"><a href="#"><i class="fa-solid fa-bell"></i><div class="label-text"></div>Notification</a></div></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Login</a></div></li>
+            <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i><div class="label-text"></div>Sign Up</a></div></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div id="notification">
+            <ul>
+                <li>No new notification</li>
+            </ul>
+        </div>
+        <div id="heading">
+            <div id="location-name">Enter Your Location</div>
+            <div id="search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="location" placeholder="Enter your Location">
+            </div>
+            
+        </div>
+        <div id="photos">
+            <div>
+                <img src="https://static.toiimg.com/photo/59283806.cms" alt="hotel-pic" class="photo">
+                <div class="price-list">
+                    <div>Pacific Hotel</div>
+                    <div>&#8377 1200/per night</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202108281133538204-e45064f022ce11ec827a0a58a9feac02.jpg" alt="pic" class="photo">
+                <div class="price-list">
+                    <div>Indian Hotel</div>
+                    <div>&#8377 1150/per night</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://daahy6akrtcj2.cloudfront.net/hotelsinranchi.net/logos/radisson_blu_hotel.jpg" alt="pic" class="photo">
+                <div class="price-list">
+                    <div>BlueEye Hotel</div>
+                    <div>&#8377 1100/per night</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://ik.imgkit.net/3vlqs5axxjf/external/ik-seo/http://media.iceportal.com/114065/photos/63654900_XL/Radisson-Blu-Hotel-Ranchi-Exterior.jpg?tr=w-780%2Ch-437%2Cfo-auto" alt="pic" class="photo">
+                <div class="price-list">
+                    <div>Ocean Hotel</div>
+                    <div>&#8377 1700/per night</div>
+                </div>
+            </div>
+            <div>
+                <img src="data:image/jpeg;base64,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" alt="pic" class="photo">
+                <div class="price-list">
+                    <div>Maharaja Hotel</div>
+                    <div>&#8377 900/per night</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1200/218790208.jpg?k=209a7d14b1068432e4383e54e4d0322ab03a588cb371749172a292b2a2b55c42&o=" alt="pic" class="photo">
+                <div class="price-list">
+                    <div>Hotel Sagar</div>
+                    <div>&#8377 1250/per night</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="mainJs.js"></script>
+</body>
+</html>

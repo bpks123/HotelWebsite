@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="cssmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-first-list">
+            <a href="index.html"><li><span style="color: green; font-size: 25px; font-weight: 600;">Hotel</span><span style="color: red; font-size: 35px; font-weight: 800;">IN</span><span style="color: blue; font-size: 25px; font-weight: 900;">Ranchi</span></li></a>
+            <li><i class="fa-solid fa-hotel"></i></li>
+            <li><i class="fa-sharp fa-solid fa-magnifying-glass"></i><input class="input-search" type="text" placeholder="Search"></li>
+        </ul>
+        <ul class="nav-second-list">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><div class="label-text"></div>Home</a></div></li>
+            <li><a href="location.html"><i class="fa-solid fa-location-dot"></i><div class="label-text"></div>Location</a></div></li>
+            <li id="nav-notification"><a href="#"><i class="fa-solid fa-bell"></i><div class="label-text"></div>Notification</a></div></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Login</a></div></li>
+            <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i><div class="label-text"></div>Sign Up</a></div></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div id="notification">
+            <ul>
+                <li>No new notification</li>
+            </ul>
+        </div>
+    <img src="hotel.jpg">
+    <div id="heading">
+        <div id="heading1">Sign Up</div>
+        <div id="sub-heading">Be the part of Ranchi hotels</div>
+        <div id="form-border">
+        <form class="container" id="form">
+            <label for="name"><span style="color: red;">*</span>Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+            <br><label for="gender"><span style="color: red;">*</span>Gender :</label>
+            <input type="radio" id="gender" value="male" name="gender" required>
+            <label for="gender">Male</label>
+            <input type="radio" value="female" name="gender" required>    
+            <label for="gender">Female</label>
+            <input type="radio" value="other" name="gender" required>    
+            <label for="gender">Other</label>
+            <br><label for="number"><span style="color: red;">*</span>Mobile No: </label>
+            <input type="text" name="number" id="number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your mobile number" required>
+            <br><label><span style="color: red;">*</span>Address: <textarea rows="4" col="7" id="textarea" name="address" placeholder="Enter your Address..." required></textarea></label>
+            <br><label><span style="color: red;">*</span>Email: <input type="email" id="email" placeholder="Enter your Email..." name="email" required></label>
+            <br><label><span style="color: red;">*</span>Password: <input type="password" id="password" placeholder="Enter your Password" name="password" required></label>
+            <input type="submit" value="Submit" class="submitButton">
+        </form>
+    </div>
+    </div>
+</main>
+<script src="mainJs.js"></script>
+</body>
+</html>
