@@ -9,7 +9,7 @@ img{
 #main #notification{
     position: absolute;
     width: 240px;
-    min-height: 150px;
+    min-height: 160px;
     border: 1px solid black;
     right: 120px;
     margin-top: -40px;
