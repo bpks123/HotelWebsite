@@ -256,7 +256,7 @@ section #section2 #hotels .location,.num,.price{
     box-sizing: border-box;
     border: 1 solid currentColor;
     background-color: white;
-    width: 50%;
+    width: 60%;
     height: 25px;
     border-radius: 20px;
     font-size: 20px;
