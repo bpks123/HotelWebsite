@@ -5,32 +5,22 @@ const mobileNo=document.getElementById('number')
 const address=document.getElementById('textarea')
 const email=document.getElementById('email')
 const mainheading=document.getElementById('heading')
-submitbooking.addEventListener('click',booking)
+
 
 var gender=''
 function booking(){
+    event.preventDefault()
     const nameOfPerson=names.value  
     const mobileNoOfPerson=mobileNo.value
     const addressOfPerson=address.value
     const email=document.getElementById('email')
     const aadhar=document.getElementById('aadhar')
     for(let i=0;i<3;i++){ 
-        if(genders[i].checked===true)
-        gender=genders[i].value
+        if(genders[i].checked){
+            gender=genders[i].value
+        }
     }
-    console.log(nameOfPerson)
-    console.log(mobileNoOfPerson)
-    console.log(addressOfPerson)
-    console.log(email.value)
-    console.log(gender)
-    if(nameOfPerson.length>2 && gender.length>1 && mobileNoOfPerson.length===10 
-        && addressOfPerson.length>1 && email.value.endsWith('@gmail.com')){
-        
-            confirmatinBooking()
-    }
-    else{
-        alert('Please fill all the deatils')
-    }
+    confirmatinBooking()
 }
 
 function confirmatinBooking(){

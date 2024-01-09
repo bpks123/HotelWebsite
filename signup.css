@@ -76,9 +76,10 @@ label{
     font-size: 20px;
 }
 .submitButton{
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: rgb(137,211,166);
-    padding: 10px;margin-left: 30%;
+    padding: 10px;
+    margin-left: 30%;
     border: 0px;
     border-radius: 4px;
     width: 40%;
@@ -87,7 +88,7 @@ label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .submitButton:hover{
-    scale: 1.1;
+    scale: 1.05;
 }
 #details{
     position: absolute;
