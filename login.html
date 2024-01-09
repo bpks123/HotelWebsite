@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Check Booking</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="cssmain.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -19,29 +19,16 @@
             <li><a href="index.html"><i class="fa-solid fa-house"></i><div class="label-text"></div>Home</a></div></li>
             <li><a href="location.html"><i class="fa-solid fa-location-dot"></i><div class="label-text"></div>Location</a></div></li>
             <!-- <li id="nav-notification"><a href="#"><i class="fa-solid fa-bell"></i><div class="label-text"></div>Notification</a></div></li> -->
-            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Login</a></div></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Booking</a></div></li>
             <!-- <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i><div class="label-text"></div>Sign Up</a></div></li> -->
         </ul>
     </nav>
     <main id="main">
-        <div id="notification">
-            <ul>
-                <li>No new notification</li>
-            </ul>
-        </div>
-        <div id="heading">Login</div>
-        <div id="main-form">
-            <form id="form">
-                <label for="name">Username</label>
-                <input type="text" name="name" id="name" placeholder="Enter username" required>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter password" required>
-                <div id="forget">Forget password?</div>
-                <input type="submit" id="login" value="Login" class="submitButton">
-            </form>
-        </div>
-        <div>
-            <div id="other-option">Or Sign Up Using</div>
+        <div id="heading">Find your Booking</div>
+        <input type="text" name="name" autofocus id="name" placeholder="Enter 10 digit reference number" required minlength="10" maxlength="10">
+        <button class="submitButton">Find</button>
+        <div id="contact-details">
+            <div id="other-option">Contact us</div>
             <div id="sign-option">
                 <ul id="list">
                     <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>

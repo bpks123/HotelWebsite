@@ -2,30 +2,16 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
-    width: 300px;
+    height: 40%;
+    max-width: 60%;
     border: 1px solid black;
     border-radius: 10px;
     background-color: beige;
-}
-#main #notification{
-    position: absolute;
-    width: 240px;
-    min-height: 150px;
-    border: 1px solid black;
-    right: 120px;
-    margin-top: -40px;
-    background-color: #7da09a;
-    border-radius: 20px;
-    z-index: 1;
-    display: none;
-}
-#main #notification li{
-    list-style-type: none;
-    font-size: 20px;
-    word-wrap: break-word;
-    border-bottom: 1px solid black;
-    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #heading{
     font-size: 40px;
@@ -35,30 +21,32 @@
     font-weight: bold;
 }
 #main-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
+
 }
-#form input{
-    display: block;
+input{
     margin-top: 10px;
     margin-bottom: 10px;
-}
-#form input[type="text"],
-input[type="password"]
-{
-  width: 80%;
-  padding: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 5px;
-}
-label{
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
     font-size: 20px;
 }
+input[type="text"]:focus{
+    border-color: #00b894;
+    box-shadow: 0 0 10px #00b894;
+    outline: none;
+}
+
 .submitButton{
     background-color: rgb(137,211,16);
-    padding: 10px;margin-left: 10%;
+    padding: 10px;
     border: 0px;
     border-radius: 4px;
-    width: 80%;
+    width: 30%;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -71,12 +59,17 @@ label{
     margin-left: 180px;
     color: blue;
 }
+#contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #other-option{
-    text-align: center;
+    margin-top: 10px;
+    margin-left: 35px;
 }
-#sign-option{
-    margin-left: 20%;
-}
+
 #list{
 display: flex;
 gap: 10px;
