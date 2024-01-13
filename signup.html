@@ -19,7 +19,7 @@
             <li><a href="index.html"><i class="fa-solid fa-house"></i><div class="label-text"></div>Home</a></div></li>
             <li><a href="location.html"><i class="fa-solid fa-location-dot"></i><div class="label-text"></div>Location</a></div></li>
             <!-- <li id="nav-notification"><a href="#"><i class="fa-solid fa-bell"></i><div class="label-text"></div>Notification</a></div></li> -->
-            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Login</a></div></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><div class="label-text"></div>Booking</a></div></li>
             <!-- <li><a href="signup.html"><i class="fa-solid fa-user-plus"></i><div class="label-text"></div>Sign Up</a></div></li> -->
         </ul>
     </nav>
@@ -60,23 +60,23 @@
                     </div>
                     <div class="form-label">
                         <label for="number"><span style="color: red;">*</span>Aadhar No: </label>
-                        <input type="text" name="number" id="aadhar" maxlength="12" placeholder="Enter your 12 digit aadhar number"
+                        <input type="text" name="number" id="aadhar" minlength="12" maxlength="12" placeholder="Enter your 12 digit aadhar number"
                             required>
                     </div>
                     <div class="form-label">
                         <label for="date"><span style="color: red;">*</span>Check In & out Date: </label>
                         <div>
-                            <input type="date" id="date" name="date">
-                            <input type="date" id="date" name="date">
+                            <input type="date" id="checkIn-date" name="date" required>
+                            <input type="date" id="checkOut-date" name="date" required>
                         </div>            
                     </div>
                     <div class="form-label">
                         <label for="number"><span style="color: red;">*</span>No of Persons: </label>
-                        <input type="number" min="1" name="number" id="number" placeholder="No of Persons" style="width: 100px;">
+                        <input type="number" min="1" name="number" id="no-of-person" placeholder="No of Persons" required style="width: 100px; height: 25px;">
                     </div>
                     <div class="form-label">
                         <label for="number"><span style="color: red;">*</span>No of Rooms: </label>
-                        <input type="number" name="number" id="number" min="1" placeholder="No of Rooms" style="width: 50px;">
+                        <input type="number" name="number" id="no-of-room" min="1" placeholder="No of Rooms" required style="width: 80px; height: 25px;">
                     </div>
                     <div class="form-label">
                         <label for="room"><span style="color: red;">*</span>Room type :</label>

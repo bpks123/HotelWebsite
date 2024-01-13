@@ -5,22 +5,48 @@ const mobileNo=document.getElementById('number')
 const address=document.getElementById('textarea')
 const email=document.getElementById('email')
 const mainheading=document.getElementById('heading')
-
-
+const checkInDate=document.getElementById('checkIn-date')
+const checkOutDate=document.getElementById('checkOut-date')
+const aadhar=document.getElementById('aadhar')
+const noOfPerson=document.getElementById('no-of-person')
+const noOfRoom=document.getElementById('no-of-room')
+const roomType=document.getElementById('room')
 var gender=''
 function booking(){
-    event.preventDefault()
-    const nameOfPerson=names.value  
-    const mobileNoOfPerson=mobileNo.value
-    const addressOfPerson=address.value
-    const email=document.getElementById('email')
-    const aadhar=document.getElementById('aadhar')
+    event.preventDefault()    
     for(let i=0;i<3;i++){ 
         if(genders[i].checked){
             gender=genders[i].value
         }
     }
-    confirmatinBooking()
+    if(checkOutDate.value>=checkInDate.value){
+        confirmatinBooking()
+        let data=new Array();
+        data=JSON.parse(localStorage.getItem('Ref'))?JSON.parse(localStorage.getItem('Ref')):[]
+        data.push({
+            "refNo":referenceNumber(),
+            "name":names.value,
+            "email":email.value,
+            "gender":gender,
+            "mobile":mobileNo.value,
+            "address":address.value,
+            "aadhar":aadhar.value,
+            "dateIn":checkInDate.value,
+            "dateOut":checkOutDate.value,
+            "person":noOfPerson.value,
+            "room":noOfRoom.value,
+            "type":roomType.value
+        })
+        localStorage.setItem('Ref',JSON.stringify(data))
+    }
+    else{
+        alert("Check out date must be next or same date")
+    }
+}
+
+function referenceNumber(){
+    const random=Math.floor(Math.random()*(999999-100000)+100000)
+    return random
 }
 
 function confirmatinBooking(){
