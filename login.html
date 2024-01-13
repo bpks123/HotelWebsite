@@ -25,17 +25,29 @@
     </nav>
     <main id="main">
         <div id="heading">Find your Booking</div>
-        <input type="text" name="name" autofocus id="ref-no" placeholder="Enter 10 digit reference number" required minlength="10" maxlength="10">
-        <button id="find-btn" class="submitButton">Find</button>
+        <input type="text" name="name" autofocus id="ref-no" placeholder="Enter 10 digit reference number" required
+            minlength="10" maxlength="10">
+        <button id="find-btn" class="submitButton">Find Your Booking</button>
         <div id="contact-details">
             <div id="other-option">Contact us</div>
             <div id="sign-option">
                 <ul id="list">
                     <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
+            </div>
+        </div>
+        <div>
+            <div id="display-booking-confirm">
+                <h1>Congratulation!!! 😃😃 you have a booking with us.</h1>
+                <button onclick="showDetails()" class="submitButton">Check Your Booking Details</button>
+            </div>
+            <div id="display-profile"></div>
+            <div id="display-not-confirm">
+                <h1>Soory!!! We don't find any booking😪😪</h1>
             </div>
         </div>
     </main>
