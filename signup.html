@@ -24,42 +24,72 @@
         </ul>
     </nav>
     <main id="main">
-    <div id="heading">
-        <div id="heading1">Booking Details</div>
-        <div id="sub-heading">Be the part of Ranchi hotels</div>
-        <div id="form-border">
-        <form class="container" id="form" onsubmit="booking()">
-            <label for="name"><span style="color: red;">*</span>Name :</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            <br><label for="gender"><span style="color: red;">*</span>Gender :</label>
-            <input type="radio" class="gender" value="Male" name="gender" required>
-            <label for="gender">Male</label>
-            <input type="radio" class="gender"  value="Female" name="gender" required>    
-            <label for="gender">Female</label>
-            <input type="radio" class="gender" value="Other" name="gender" required>    
-            <label for="gender">Other</label>
-            <br><label for="number"><span style="color: red;">*</span>Mobile No: </label>
-            <input type="text" name="number" id="number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your mobile number" required>
-            <br><label><span style="color: red;">*</span>Address: <textarea rows="4" col="7" id="textarea" name="address" placeholder="Enter your Address..." required></textarea></label>
-            <br><label><span style="color: red;">*</span>Email: <input type="email" id="email" placeholder="Enter your Email..." name="email" required></label>
-            <br><label for="number"><span style="color: red;">*</span>Aadhar No: </label>
-            <input type="text" name="number" id="aadhar" maxlength="12" placeholder="Enter your 12 digit aadhar number" required>
-            <br><label for="date"><span style="color: red;">*</span>Check In Date: <input style="width: 100px;" type="date" id="date"  name="date" ></label><br>
-            <label for="date"><span style="color: red;">*</span>Check Out Date: <input style="width: 100px;" type="date" id="date"  name="date" ></label><br>
-            <br><label for="number"><span style="color: red;">*</span>No of Persons: </label>
-            <input type="number" min="1" name="number" id="number" placeholder="No of Persons"  style="width: 100px;">
-            <label for="number"><span style="color: red;">*</span>No of Rooms: </label>
-            <input type="number" name="number" id="number" min="1" placeholder="No of Rooms"  style="width: 50px;">
-            <br><label for="room"><span style="color: red;">*</span>Room type :</label>
-            <input type="radio" value="ac" name="room" >
-            <label for="room">AC</label>
-            <input type="radio" value="non-ac" name="room" >    
-            <label for="room">Non AC</label>
-            <input type="submit" value="Submit" id="booking-btn" class="submitButton">
+        <marquee>Be the part of Ranchi Hotels</marquee>
+        <div id="heading">
+            <h1>Booking Details</h1>
+            <div id="form-border">
+                <form class="container" id="form" onsubmit="booking()">
+                    <div class="form-label">
+                        <label for="name"><span style="color: red;">*</span>Name :</label>
+                        <input type="text" autofocus id="name" name="name" placeholder="Enter your name..." required>
+                    </div>
+                    <div class="form-label">
+                        <label for="gender"><span style="color: red;">*</span>Gender :</label>
+                        <div>
+                            <input type="radio" class="gender" value="Male" name="gender" required>
+                            <label for="gender">Male</label>
+                            <input type="radio" class="gender" value="Female" name="gender" required>
+                            <label for="gender">Female</label>
+                            <input type="radio" class="gender" value="Other" name="gender" required>
+                            <label for="gender">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-label">
+                        <label for="number"><span style="color: red;">*</span>Mobile No: </label>
+                        <input type="text" name="number" id="number" maxlength="10" pattern="[1-9]{1}[0-9]{9}"
+                            placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-label">
+                        <label><span style="color: red;">*</span>Address: </label>
+                        <textarea rows="4" col="7" id="textarea" name="address" placeholder="Enter your Address..."
+                            required></textarea>
+                    </div>
+                    <div class="form-label">
+                        <label><span style="color: red;">*</span>Email: </label>
+                        <input type="email" id="email" placeholder="Enter your Email..." name="email" required>
+                    </div>
+                    <div class="form-label">
+                        <label for="number"><span style="color: red;">*</span>Aadhar No: </label>
+                        <input type="text" name="number" id="aadhar" maxlength="12" placeholder="Enter your 12 digit aadhar number"
+                            required>
+                    </div>
+                    <div class="form-label">
+                        <label for="date"><span style="color: red;">*</span>Check In & out Date: </label>
+                        <div>
+                            <input type="date" id="date" name="date">
+                            <input type="date" id="date" name="date">
+                        </div>            
+                    </div>
+                    <div class="form-label">
+                        <label for="number"><span style="color: red;">*</span>No of Persons: </label>
+                        <input type="number" min="1" name="number" id="number" placeholder="No of Persons" style="width: 100px;">
+                    </div>
+                    <div class="form-label">
+                        <label for="number"><span style="color: red;">*</span>No of Rooms: </label>
+                        <input type="number" name="number" id="number" min="1" placeholder="No of Rooms" style="width: 50px;">
+                    </div>
+                    <div class="form-label">
+                        <label for="room"><span style="color: red;">*</span>Room type :</label>
+                        <select name="room" id="room">
+                            <option value="AC">AC</option>
+                            <option value="Non-AC">Non-AC</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Book" id="booking-btn" class="submitButton">
             
-        </form>
-    </div>
-    </div>
+                </form>
+            </div>
+            </div>
     <div id="details">
         <h1>Hi!</h1>
         <h1 id="cutomerName">Bipin Kumar</h1>
