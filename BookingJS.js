@@ -12,6 +12,7 @@ const noOfPerson=document.getElementById('no-of-person')
 const noOfRoom=document.getElementById('no-of-room')
 const roomType=document.getElementById('room')
 var gender=''
+let bookingReference=referenceNumber()
 function booking(){
     event.preventDefault()    
     for(let i=0;i<3;i++){ 
@@ -24,7 +25,7 @@ function booking(){
         let data=new Array();
         data=JSON.parse(localStorage.getItem('Ref'))?JSON.parse(localStorage.getItem('Ref')):[]
         data.push({
-            "refNo":referenceNumber(),
+            "refNo":bookingReference,
             "name":names.value,
             "email":email.value,
             "gender":gender,
@@ -35,7 +36,9 @@ function booking(){
             "dateOut":checkOutDate.value,
             "person":noOfPerson.value,
             "room":noOfRoom.value,
-            "type":roomType.value
+            "type":roomType.value,
+            "hotelName":localStorage.getItem('hotelName'),
+            "hotelPrice":localStorage.getItem('hotelPrice')
         })
         localStorage.setItem('Ref',JSON.stringify(data))
     }
@@ -48,12 +51,13 @@ function referenceNumber(){
     const random=Math.floor(Math.random()*(999999-100000)+100000)
     return random
 }
-
 function confirmatinBooking(){
     document.getElementById('cutomerName').innerText=names.value
     document.getElementById('customerGender').innerText=gender
     document.getElementById('customerMobile').innerText=mobileNo.value
-    document.getElementById('customerAddress').innerHTML=address.value
+    document.getElementById('customerAddress').innerText=address.value
+    document.getElementById('ref-number').innerText=`Your Booking Reference no is: ${bookingReference}`
+    document.getElementById('customerConfirmation').innerText=`Your booking is confirmed in ${localStorage.getItem('hotelName')} at just Rs. ${localStorage.getItem('hotelPrice')} !!!`
     const confirmation=document.getElementById('details')
 
     confirmation.style.display='block'

@@ -31,6 +31,7 @@ function bookingDetails(booking){
     <button id="close-details" onclick="closeDisplay()">x</button>
     <h1>Hi ${booking.name}! your booking is confirmed</h1>
     <h2>Your booking details for Reference: ${booking.refNo}</h2>
+    <h2>Hotel Name: ${booking.hotelName} & Price: ${booking.hotelPrice}/Night</h2>
     <div>Name : ${booking.name}</div>
     <div>Gender : ${booking.gender}</div>
     <div>Email: ${booking.email}</div>
